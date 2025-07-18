@@ -1,0 +1,183 @@
+{
+  "personal": {
+    "name": {
+      "ru": "Алексей Разработчиков",
+      "en": "Alex Developer"
+    },
+    "title": {
+      "ru": "Backend Разработчик",
+      "en": "Backend Developer"
+    },
+    "description": {
+      "ru": "Опытный backend разработчик с 5+ годами опыта в создании масштабируемых веб-приложений и API. Специализируюсь на Node.js, Python и микросервисной архитектуре.",
+      "en": "Experienced backend developer with 5+ years of experience building scalable web applications and APIs. Specializing in Node.js, Python, and microservices architecture."
+    },
+    "email": "alex.developer@email.com",
+    "phone": "+7 (999) 123-45-67",
+    "location": {
+      "ru": "Москва, Россия",
+      "en": "Moscow, Russia"
+    },
+    "avatar": "/src/assets/avatar-placeholder.jpg"
+  },
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "Node.js",
+        "level": 90,
+        "icon": "server",
+        "category": "backend"
+      },
+      {
+        "name": "Python",
+        "level": 85,
+        "icon": "code",
+        "category": "backend"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 88,
+        "icon": "database",
+        "category": "database"
+      },
+      {
+        "name": "Docker",
+        "level": 82,
+        "icon": "container",
+        "category": "devops"
+      },
+      {
+        "name": "MongoDB",
+        "level": 78,
+        "icon": "database",
+        "category": "database"
+      },
+      {
+        "name": "Redis",
+        "level": 75,
+        "icon": "zap",
+        "category": "database"
+      },
+      {
+        "name": "AWS",
+        "level": 80,
+        "icon": "cloud",
+        "category": "devops"
+      },
+      {
+        "name": "Kubernetes",
+        "level": 70,
+        "icon": "layers",
+        "category": "devops"
+      },
+      {
+        "name": "GraphQL",
+        "level": 85,
+        "icon": "share-2",
+        "category": "api"
+      },
+      {
+        "name": "TypeScript",
+        "level": 87,
+        "icon": "code-2",
+        "category": "backend"
+      }
+    ],
+    "softSkills": [
+      {
+        "name": {
+          "ru": "Командная работа",
+          "en": "Team Leadership"
+        },
+        "level": 90,
+        "icon": "users"
+      },
+      {
+        "name": {
+          "ru": "Решение проблем",
+          "en": "Problem Solving"
+        },
+        "level": 92,
+        "icon": "lightbulb"
+      },
+      {
+        "name": {
+          "ru": "Коммуникация",
+          "en": "Communication"
+        },
+        "level": 85,
+        "icon": "message-circle"
+      },
+      {
+        "name": {
+          "ru": "Управление проектами",
+          "en": "Project Management"
+        },
+        "level": 80,
+        "icon": "briefcase"
+      },
+      {
+        "name": {
+          "ru": "Критическое мышление",
+          "en": "Critical Thinking"
+        },
+        "level": 88,
+        "icon": "brain"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "E-commerce Microservices Platform",
+      "description": {
+        "ru": "Разработал масштабируемую платформу электронной коммерции с микросервисной архитектурой, обслуживающую 100К+ пользователей.",
+        "en": "Built scalable e-commerce platform with microservices architecture serving 100K+ users."
+      },
+      "technologies": ["Node.js", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
+      "github": "https://github.com/alexdev/ecommerce-platform",
+      "image": "/src/assets/project-1.jpg",
+      "status": "completed"
+    },
+    {
+      "title": "Real-time Chat API",
+      "description": {
+        "ru": "API для чата в реальном времени с WebSocket, поддерживающий 10К+ одновременных соединений.",
+        "en": "Real-time chat API with WebSocket support handling 10K+ concurrent connections."
+      },
+      "technologies": ["Node.js", "Socket.io", "MongoDB", "Redis", "JWT"],
+      "github": "https://github.com/alexdev/realtime-chat-api",
+      "image": "/src/assets/project-2.jpg",
+      "status": "completed"
+    },
+    {
+      "title": "AI-Powered Analytics Dashboard",
+      "description": {
+        "ru": "Система аналитики с машинным обучением для предсказания трендов и автоматизации отчетов.",
+        "en": "ML-powered analytics system for trend prediction and automated reporting."
+      },
+      "technologies": ["Python", "FastAPI", "TensorFlow", "PostgreSQL", "Celery"],
+      "github": "https://github.com/alexdev/ai-analytics",
+      "image": "/src/assets/project-3.jpg",
+      "status": "in-progress"
+    },
+    {
+      "title": "Blockchain Voting System",
+      "description": {
+        "ru": "Децентрализованная система голосования на блокчейне с криптографической защитой.",
+        "en": "Decentralized blockchain voting system with cryptographic security."
+      },
+      "technologies": ["Solidity", "Web3.js", "Node.js", "IPFS", "React"],
+      "github": "https://github.com/alexdev/blockchain-voting",
+      "image": "/src/assets/project-4.jpg",
+      "status": "completed"
+    }
+  ],
+  "contact": {
+    "social": {
+      "github": "https://github.com/alexdev",
+      "linkedin": "https://linkedin.com/in/alexdev",
+      "telegram": "https://t.me/alexdev",
+      "email": "alex.developer@email.com"
+    }
+  }
+}
