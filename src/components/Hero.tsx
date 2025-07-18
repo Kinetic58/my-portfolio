@@ -1,4 +1,5 @@
 import { Scene3D } from "./Scene3D";
+import { ErrorBoundary } from "./ErrorBoundary";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Language } from "./LanguageToggle";
@@ -19,7 +20,9 @@ export function Hero({ language, personalData }: HeroProps) {
 
   return (
     <section className="min-h-screen relative flex items-center justify-center overflow-hidden cyber-grid">
-      <Scene3D />
+      <ErrorBoundary>
+        <Scene3D />
+      </ErrorBoundary>
       
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
