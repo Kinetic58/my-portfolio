@@ -1,19 +1,19 @@
 {
   "personal": {
     "name": {
-      "ru": "Алексей Разработчиков",
-      "en": "Alex Developer"
+      "ru": "Родион Бушуев",
+      "en": "Rodion Bushuev"
     },
     "title": {
-      "ru": "Backend Разработчик",
-      "en": "Backend Developer"
+      "ru": "Python Backend Разработчик",
+      "en": "Python Backend Developer"
     },
     "description": {
-      "ru": "Опытный backend разработчик с 5+ годами опыта в создании масштабируемых веб-приложений и API. Специализируюсь на Node.js, Python и микросервисной архитектуре.",
-      "en": "Experienced backend developer with 5+ years of experience building scalable web applications and APIs. Specializing in Node.js, Python, and microservices architecture."
+      "ru": "Опытный backend разработчик с 3+ годами опыта в создании масштабируемых веб-приложений и API. Специализируюсь на Node.js, Python и микросервисной архитектуре. Учусь в РТУ МИРЭА на 2 курсе факультета Прикладная математика и информатика 'Математическое моделирование и вычислительная математика'",
+      "en": "Experienced backend developer with 3+ years of experience building scalable web applications and APIs. Specializing in Node.js, Python, and microservices architecture. I am a 2nd-year student at the Department of Applied Mathematics and Computer Science at RTU MIREA."
     },
-    "email": "alex.developer@email.com",
-    "phone": "+7 (999) 123-45-67",
+    "email": "developer.rodion@mail.ru",
+    "phone": "+7 (968) 059 03 73",
     "location": {
       "ru": "Москва, Россия",
       "en": "Moscow, Russia"
@@ -47,38 +47,32 @@
         "category": "devops"
       },
       {
-        "name": "MongoDB",
-        "level": 78,
-        "icon": "database",
-        "category": "database"
-      },
-      {
-        "name": "Redis",
-        "level": 75,
-        "icon": "zap",
-        "category": "database"
-      },
-      {
-        "name": "AWS",
-        "level": 80,
-        "icon": "cloud",
-        "category": "devops"
-      },
-      {
-        "name": "Kubernetes",
-        "level": 70,
-        "icon": "layers",
-        "category": "devops"
-      },
-      {
-        "name": "GraphQL",
-        "level": 85,
-        "icon": "share-2",
-        "category": "api"
-      },
-      {
         "name": "TypeScript",
         "level": 87,
+        "icon": "code-2",
+        "category": "backend"
+      },
+      {
+        "name": "tailwind",
+        "level": 80,
+        "icon": "code-2",
+        "category": "backend"
+      },
+      {
+        "name": "React",
+        "level": 80,
+        "icon": "code-2",
+        "category": "backend"
+      },
+      {
+        "name": "css & scss",
+        "level": 100,
+        "icon": "code-2",
+        "category": "backend"
+      },
+      {
+        "name": "HTML",
+        "level": 100,
         "icon": "code-2",
         "category": "backend"
       }
@@ -128,56 +122,77 @@
   },
   "projects": [
     {
-      "title": "E-commerce Microservices Platform",
+      "title": "Telegram Bot",
       "description": {
-        "ru": "Разработал масштабируемую платформу электронной коммерции с микросервисной архитектурой, обслуживающую 100К+ пользователей.",
-        "en": "Built scalable e-commerce platform with microservices architecture serving 100K+ users."
+        "ru": "Цель этого проекта - помочь врачам и пациентам быстро получать помощь и общаться друг с другом.",
+        "en": "This project aims to build to help doctors and patients to get quick help and communicate with each other."
       },
-      "technologies": ["Node.js", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
-      "github": "https://github.com/alexdev/ecommerce-platform",
+      "technologies": ["Python", "SQL", "API"],
+      "github": "https://github.com/Kinetic58/MedicalBot",
       "image": "/src/assets/project-1.jpg",
       "status": "completed"
     },
     {
-      "title": "Real-time Chat API",
+      "title": "Telegram Bot",
       "description": {
-        "ru": "API для чата в реальном времени с WebSocket, поддерживающий 10К+ одновременных соединений.",
-        "en": "Real-time chat API with WebSocket support handling 10K+ concurrent connections."
+        "ru": "AnonymChat - это Telegram-бот, который позволяет пользователям анонимно общаться с другими пользователями. Бот предоставляет различные режимы чата, встроенные игры и систему токенов для покупок в приложении.",
+        "en": "AnonymChat is a Telegram bot that allows users to chat anonymously with others. The bot provides various chat modes, in-service games, and a token system for in-app purchases."
       },
-      "technologies": ["Node.js", "Socket.io", "MongoDB", "Redis", "JWT"],
-      "github": "https://github.com/alexdev/realtime-chat-api",
+      "technologies": ["Python", "SQL", "API"],
+      "github": "https://github.com/Kinetic58/AnonymChat",
       "image": "/src/assets/project-2.jpg",
       "status": "completed"
     },
     {
-      "title": "AI-Powered Analytics Dashboard",
+      "title": "Data Science",
       "description": {
-        "ru": "Система аналитики с машинным обучением для предсказания трендов и автоматизации отчетов.",
-        "en": "ML-powered analytics system for trend prediction and automated reporting."
+        "ru": "Этот проект посвящен анализу данных о продажах видеоигр с 1980 по 2020 год. Цель состоит в том, чтобы изучить, как менялись предпочтения игроков с течением времени, какие платформы и жанры были наиболее популярны и как распределялись продажи в разных регионах. Эти данные могут быть полезны для понимания игрового рынка и прогнозирования тенденций.",
+        "en": "This project focuses on analyzing video game sales data from 1980 to 2020. The goal is to explore how player preferences have changed over time, which platforms and genres were the most popular, and how sales were distributed across different regions. These insights can be useful for understanding the gaming market and predicting trends."
       },
-      "technologies": ["Python", "FastAPI", "TensorFlow", "PostgreSQL", "Celery"],
-      "github": "https://github.com/alexdev/ai-analytics",
+      "technologies": ["Python", "numpy", "matplotlib", "pillow", "pandas"],
+      "github": "https://github.com/Kinetic58/Data-Science-",
       "image": "/src/assets/project-3.jpg",
-      "status": "in-progress"
+      "status": "completed"
     },
     {
-      "title": "Blockchain Voting System",
+      "title": "Telegram Bot",
       "description": {
-        "ru": "Децентрализованная система голосования на блокчейне с криптографической защитой.",
-        "en": "Decentralized blockchain voting system with cryptographic security."
+        "ru": "Telegram-бот для оценки условий полета по погоде в 4 городах России.",
+        "en": "A Telegram bot for assessing flight conditions based on weather in 4 Russian cities."
       },
-      "technologies": ["Solidity", "Web3.js", "Node.js", "IPFS", "React"],
-      "github": "https://github.com/alexdev/blockchain-voting",
+      "technologies": ["Python", "API"],
+      "github": "https://github.com/Kinetic58/AeroWeatherBot",
       "image": "/src/assets/project-4.jpg",
+      "status": "completed"
+    },
+    {
+      "title": "Telegram Bot",
+      "description": {
+        "ru": "Aiogram-бот, отправляющий рандомные сигналы по бинарным опционам каждые 5–7 минут. Возможность запускать и останавливать торговую сессию.",
+        "en": "Aiogram bot, sending random signals on binary options every 5-7 minutes. Ability to start and stop the trading session."
+      },
+      "technologies": ["Python", "API"],
+      "github": "https://github.com/Kinetic58/SignalBot",
+      "image": "/src/assets/project-1.jpg",
+      "status": "completed"
+    },
+    {
+      "title": "Site",
+      "description": {
+        "ru": "Веб-приложение для просмотра погоды в любом городе с историей запросов и публичной статистикой.",
+        "en": "A web application for viewing weather in any city with a history of requests and public statistics."
+      },
+      "technologies": ["FastAPI", "API", "Jinja2", "Tailwind", "css", "SQLite"],
+      "github": "https://github.com/Kinetic58/weather-fastapi",
+      "image": "/src/assets/project-1.jpg",
       "status": "completed"
     }
   ],
   "contact": {
     "social": {
-      "github": "https://github.com/alexdev",
-      "linkedin": "https://linkedin.com/in/alexdev",
-      "telegram": "https://t.me/alexdev",
-      "email": "alex.developer@email.com"
+      "github": "https://github.com/Kinetic58",
+      "telegram": "https://t.me/python_dev_strx",
+      "email": "developer.rodion@mail.ru"
     }
   }
 }

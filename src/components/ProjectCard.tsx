@@ -69,10 +69,6 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
             <Github size={18} />
             {language === 'ru' ? 'Код' : 'Code'}
           </button>
-          <button className="btn-cyber flex items-center gap-2">
-            <ExternalLink size={18} />
-            {language === 'ru' ? 'Демо' : 'Demo'}
-          </button>
         </div>
       </div>
       

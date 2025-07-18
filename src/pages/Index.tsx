@@ -210,32 +210,38 @@ const Index = () => {
       <section id="contact" className="py-20 px-6 relative">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+              initial={{opacity: 0, y: 50}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{duration: 0.8}}
+              viewport={{once: true}}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 gradient-text">
               {language === "ru" ? "Свяжитесь со мной" : "Get In Touch"}
             </h2>
             <div className="w-24 h-1 bg-gradient-neon mx-auto mb-8"></div>
             <p className="text-lg text-muted-foreground mb-12">
-              {language === "ru" 
-                ? "Готов обсудить новые возможности и интересные проекты" 
-                : "Ready to discuss new opportunities and exciting projects"}
+              {language === "ru"
+                  ? "Готов обсудить новые возможности и интересные проекты"
+                  : "Ready to discuss new opportunities and exciting projects"}
             </p>
-            
+
             <div className="flex flex-wrap gap-6 justify-center">
-              <button className="btn-cyber">
+              <button
+                  className="btn-cyber"
+                  onClick={() => window.open(`mailto:${resumeData.contact.social.email}`, '_blank')}
+              >
                 {language === "ru" ? "Написать Email" : "Send Email"}
               </button>
-              <button className="btn-cyber">
-                {language === "ru" ? "LinkedIn" : "LinkedIn"}
-              </button>
-              <button className="btn-cyber">
+              <button
+                  className="btn-cyber"
+                  onClick={() => window.open(resumeData.contact.social.github, '_blank')}
+              >
                 {language === "ru" ? "GitHub" : "GitHub"}
               </button>
-              <button className="btn-cyber">
+              <button
+                  className="btn-cyber"
+                  onClick={() => window.open(resumeData.contact.social.telegram, '_blank')}
+              >
                 {language === "ru" ? "Telegram" : "Telegram"}
               </button>
             </div>
@@ -247,7 +253,7 @@ const Index = () => {
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 {resumeData.personal.name[language]}. 
+            © 2025 {resumeData.personal.name[language]}.
             {language === "ru" ? " Все права защищены." : " All rights reserved."}
           </p>
         </div>
