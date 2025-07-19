@@ -16,7 +16,6 @@ interface SkillCardProps {
 }
 
 export function SkillCard({ skill, language, isSelected, onClick, index }: SkillCardProps) {
-  // Get the icon component dynamically
   const IconComponent = (Icons as any)[skill.icon] as LucideIcon || Icons.Code;
   
   const skillName = typeof skill.name === "string" ? skill.name : skill.name[language];
@@ -39,7 +38,6 @@ export function SkillCard({ skill, language, isSelected, onClick, index }: Skill
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-      {/* Background gradient effect */}
       <div className="absolute inset-0 bg-gradient-cyber opacity-10 rounded-xl"></div>
       
       <div className="relative z-10">
@@ -66,8 +64,7 @@ export function SkillCard({ skill, language, isSelected, onClick, index }: Skill
         `}>
           {skillName}
         </h3>
-        
-        {/* Skill level bar */}
+
         <div className="skill-bar">
           <motion.div
             className="skill-progress"
@@ -83,8 +80,7 @@ export function SkillCard({ skill, language, isSelected, onClick, index }: Skill
           </span>
         )}
       </div>
-      
-      {/* Hover effect overlay */}
+
       <div className="absolute inset-0 bg-gradient-neon opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300"></div>
     </motion.div>
   );

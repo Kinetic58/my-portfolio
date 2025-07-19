@@ -25,7 +25,6 @@ export class ErrorBoundary extends React.Component<
     if (this.state.hasError) {
       return (
         <div className="absolute inset-0 -z-10">
-          {/* Fallback animated background without 3D */}
           <div className="absolute inset-0 cyber-grid opacity-30"></div>
           <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-cyber rounded-full opacity-20 animate-pulse-glow"></div>
           <div className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-neon rounded-full opacity-30 animate-float"></div>

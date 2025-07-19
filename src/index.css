@@ -4,11 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Cyber-tech design system with neon aesthetics */
 
 @layer base {
   :root {
-    /* Dark theme primary colors */
     --background: 222 84% 4.9%;
     --foreground: 180 100% 90%;
 
@@ -18,18 +16,15 @@
     --popover: 220 39% 11%;
     --popover-foreground: 180 100% 90%;
 
-    /* Neon cyan primary */
     --primary: 180 100% 50%;
     --primary-foreground: 222 84% 4.9%;
 
-    /* Dark purple secondary */
     --secondary: 260 100% 15%;
     --secondary-foreground: 300 100% 80%;
 
     --muted: 217 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    /* Neon green accent */
     --accent: 120 100% 50%;
     --accent-foreground: 222 84% 4.9%;
 
@@ -40,26 +35,22 @@
     --input: 217 32.6% 17.5%;
     --ring: 180 100% 50%;
 
-    /* Cyber color palette */
     --cyber-blue: 195 100% 50%;
     --cyber-purple: 270 100% 60%;
     --cyber-pink: 320 100% 70%;
     --cyber-green: 120 100% 50%;
     --cyber-orange: 30 100% 60%;
-    
-    /* Gradients */
+
     --gradient-cyber: linear-gradient(135deg, hsl(var(--cyber-blue)), hsl(var(--cyber-purple)));
     --gradient-neon: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)));
     --gradient-dark: linear-gradient(135deg, hsl(222 84% 4.9%), hsl(220 39% 11%));
     --gradient-glow: linear-gradient(135deg, hsl(var(--cyber-purple) / 0.3), hsl(var(--primary) / 0.3));
-    
-    /* Shadows and glows */
+
     --shadow-cyber: 0 0 20px hsl(var(--primary) / 0.3);
     --shadow-neon: 0 0 30px hsl(var(--accent) / 0.4);
     --shadow-glow: 0 0 50px hsl(var(--cyber-purple) / 0.2);
     --shadow-deep: 0 10px 40px hsl(222 84% 4.9% / 0.8);
-    
-    /* Animations */
+
     --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-glow: all 0.5s ease-in-out;
 
@@ -83,7 +74,6 @@
   }
 
   .light {
-    /* Light theme cyber colors */
     --background: 0 0% 98%;
     --foreground: 222 84% 4.9%;
 
@@ -108,8 +98,7 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 180 100% 40%;
-    
-    /* Light mode adjustments for cyber colors */
+
     --cyber-blue: 195 100% 40%;
     --cyber-purple: 270 100% 50%;
     --cyber-pink: 320 100% 60%;
@@ -139,7 +128,6 @@
 }
 
 @layer components {
-  /* Cyber button variants */
   .btn-cyber {
     @apply relative overflow-hidden bg-background border border-primary text-primary px-6 py-3 rounded-lg 
            font-semibold tracking-wider uppercase transition-all duration-300 transform hover:scale-105
@@ -156,7 +144,6 @@
     @apply translate-x-full;
   }
 
-  /* Neon glow effects */
   .glow-cyber {
     @apply shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)];
   }
@@ -165,7 +152,6 @@
     @apply shadow-[0_0_20px_hsl(var(--accent)/0.3)] hover:shadow-[0_0_30px_hsl(var(--accent)/0.5)];
   }
 
-  /* Floating animation */
   .float {
     animation: float 6s ease-in-out infinite;
   }
@@ -174,12 +160,10 @@
     animation: float 6s ease-in-out infinite 2s;
   }
 
-  /* Pulse glow animation */
   .pulse-glow {
     animation: pulseGlow 2s ease-in-out infinite;
   }
 
-  /* Cyber grid background */
   .cyber-grid {
     background-image: 
       linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px),
@@ -187,7 +171,6 @@
     background-size: 20px 20px;
   }
 
-  /* Holographic effect */
   .holographic {
     background: linear-gradient(45deg, 
       hsl(var(--cyber-blue) / 0.1), 
@@ -199,7 +182,6 @@
     animation: holographic 4s ease infinite;
   }
 
-  /* Skill progress bars */
   .skill-bar {
     @apply relative h-2 bg-muted rounded-full overflow-hidden;
   }
@@ -211,7 +193,6 @@
 }
 
 @layer utilities {
-  /* Custom keyframes */
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
@@ -238,7 +219,6 @@
     to { transform: rotateY(360deg); }
   }
 
-  /* Text effects */
   .text-glow {
     text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
   }
@@ -250,7 +230,6 @@
       0 0 15px hsl(var(--primary));
   }
 
-  /* Gradient text */
   .gradient-text {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }

@@ -13,7 +13,6 @@ const Index = () => {
   const [selectedSkill, setSelectedSkill] = useState<number | null>(null);
   const { getImageUrl } = useImageImports();
 
-  // Combine hard and soft skills for display
   const allSkills = [
     ...resumeData.skills.hardSkills,
     ...resumeData.skills.softSkills.map(skill => ({
@@ -30,7 +29,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Fixed header with controls */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <motion.div
@@ -64,10 +62,8 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
       <Hero language={language} personalData={resumeData.personal} />
 
-      {/* About Section */}
       <section id="about" className="py-20 px-6 relative">
         <div className="container mx-auto max-w-4xl">
           <motion.div
@@ -136,7 +132,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="py-20 px-6 relative cyber-grid">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -172,7 +167,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="py-20 px-6 relative">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -206,7 +200,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-20 px-6 relative">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
@@ -249,7 +242,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">

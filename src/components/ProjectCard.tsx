@@ -34,7 +34,6 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
                  hover:shadow-glow hover:scale-105 backdrop-blur-sm"
       whileHover={{ y: -10 }}
     >
-      {/* Project image with overlay */}
       <div className="relative h-48 overflow-hidden">
         <img
           src={getImageUrl(project.image)}
@@ -42,8 +41,7 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-        
-        {/* Status badge */}
+
         <div className="absolute top-4 right-4">
           <span className={`
             px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider
@@ -58,8 +56,7 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
             }
           </span>
         </div>
-        
-        {/* Hover overlay with actions */}
+
         <div className="absolute inset-0 bg-background/90 opacity-0 group-hover:opacity-100 
                         transition-all duration-300 flex items-center justify-center gap-4">
           <button
@@ -71,8 +68,7 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
           </button>
         </div>
       </div>
-      
-      {/* Project content */}
+
       <div className="p-6">
         <h3 className="font-orbitron font-bold text-xl mb-3 text-foreground group-hover:text-primary transition-colors">
           {project.title}
@@ -81,8 +77,7 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
         <p className="text-muted-foreground leading-relaxed mb-4 line-clamp-3">
           {project.description[language]}
         </p>
-        
-        {/* Technologies */}
+
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech, techIndex) => (
             <span
@@ -95,8 +90,7 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
             </span>
           ))}
         </div>
-        
-        {/* Action button */}
+
         <button
           onClick={handleGithubClick}
           className="w-full btn-cyber flex items-center justify-center gap-2 group-hover:shadow-neon"
@@ -105,8 +99,7 @@ export function ProjectCard({ project, language, index }: ProjectCardProps) {
           {language === 'ru' ? 'Посмотреть на GitHub' : 'View on GitHub'}
         </button>
       </div>
-      
-      {/* Card glow effect */}
+
       <div className="absolute -inset-0.5 bg-gradient-cyber opacity-0 group-hover:opacity-20 rounded-xl blur transition-opacity duration-500 -z-10"></div>
     </motion.div>
   );

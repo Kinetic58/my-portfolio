@@ -78,7 +78,6 @@ function FloatingTorus({ position }: { position: [number, number, number] }) {
   );
 }
 
-// Simple orbit controls replacement
 function CameraControls() {
   useFrame((state) => {
     const time = state.clock.getElapsedTime();
