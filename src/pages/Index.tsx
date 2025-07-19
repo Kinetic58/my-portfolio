@@ -232,12 +232,6 @@ const Index = () => {
                 </button>
                 <button
                     className="btn-cyber"
-                    onClick={() => window.open(resumeData.contact.social.linkedin, '_blank')}
-                >
-                  {language === "ru" ? "LinkedIn" : "LinkedIn"}
-                </button>
-                <button
-                    className="btn-cyber"
                     onClick={() => window.open(resumeData.contact.social.github, '_blank')}
                 >
                   {language === "ru" ? "GitHub" : "GitHub"}
