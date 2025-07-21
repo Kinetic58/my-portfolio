@@ -186,6 +186,17 @@
       "github": "https://github.com/Kinetic58/weather-fastapi",
       "image": "/src/assets/project-1.jpg",
       "status": "completed"
+    },
+    {
+      "title": "Telegram Bot",
+      "description": {
+        "ru": "Telegram-бот для создания стикеров и премиальных пакетов эмодзи.",
+        "en": "Telegram bot for creating stickers and premium emoji packs."
+      },
+      "technologies": ["Python"],
+      "github": "https://github.com/Kinetic58/StickerBot",
+      "image": "/src/assets/project-2.jpg",
+      "status": "in progress"
     }
   ],
   "contact": {
