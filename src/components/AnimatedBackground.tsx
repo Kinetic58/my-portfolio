@@ -25,7 +25,7 @@ const FloatingParticles = () => {
             {particles.map((particle) => (
                 <motion.div
                     key={particle.id}
-                    className="absolute rounded-full opacity-60"
+                    className="absolute rounded-full opacity-40 dark:opacity-60"
                     style={{
                         width: particle.size,
                         height: particle.size,
@@ -37,7 +37,7 @@ const FloatingParticles = () => {
                     animate={{
                         y: [0, -100, 0],
                         x: [0, Math.random() * 100 - 50, 0],
-                        opacity: [0.3, 0.8, 0.3],
+                        opacity: [0.2, 0.5, 0.2],
                         scale: [0.5, 1.2, 0.5],
                     }}
                     transition={{
@@ -67,7 +67,7 @@ const GeometricShapes = () => {
             {shapes.map((shape) => (
                 <motion.div
                     key={shape.id}
-                    className={`absolute border-2 border-primary/20 ${
+                    className={`absolute border-2 border-primary/10 dark:border-primary/20 ${
                         shape.type === 'circle' ? 'rounded-full' : 'rounded-lg'
                     }`}
                     style={{
@@ -80,7 +80,7 @@ const GeometricShapes = () => {
                     animate={{
                         rotate: [shape.rotation, shape.rotation + 360],
                         scale: [0.8, 1.2, 0.8],
-                        opacity: [0.1, 0.3, 0.1],
+                        opacity: [0.05, 0.15, 0.05],
                     }}
                     transition={{
                         duration: Math.random() * 20 + 10,
@@ -165,7 +165,7 @@ const GlowingOrbs = () => {
             {orbs.map((orb) => (
                 <motion.div
                     key={orb.id}
-                    className="absolute rounded-full opacity-20 blur-xl"
+                    className="absolute rounded-full opacity-10 dark:opacity-20 blur-xl"
                     style={{
                         width: orb.size,
                         height: orb.size,
@@ -177,7 +177,7 @@ const GlowingOrbs = () => {
                         x: [0, Math.random() * 200 - 100, 0],
                         y: [0, Math.random() * 200 - 100, 0],
                         scale: [1, 1.5, 1],
-                        opacity: [0.1, 0.3, 0.1],
+                        opacity: [0.05, 0.15, 0.05],
                     }}
                     transition={{
                         duration: Math.random() * 15 + 10,
@@ -194,7 +194,7 @@ const GlowingOrbs = () => {
 const AnimatedGrid = () => {
     return (
         <div className="fixed inset-0 pointer-events-none overflow-hidden z-5">
-            <svg className="w-full h-full opacity-20">
+            <svg className="w-full h-full opacity-10 dark:opacity-20">
                 <defs>
                     <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
                         <motion.path
