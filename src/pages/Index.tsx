@@ -255,7 +255,7 @@ const Index = () => {
         <footer className="py-8 px-6 border-t border-border">
           <div className="container mx-auto text-center">
             <p className="text-muted-foreground">
-              © 2024 {resumeData.personal.name[language]}.
+              © 2025 {resumeData.personal.name[language]}.
               {language === "ru" ? " Все права защищены." : " All rights reserved."}
             </p>
           </div>
