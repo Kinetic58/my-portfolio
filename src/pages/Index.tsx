@@ -6,6 +6,8 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { WorkPreferencesCard } from "@/components/WorkPreferencesCard";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LanguageToggle, Language } from "@/components/LanguageToggle";
+import { AnimatedBackground } from "@/components/AnimatedBackground";
+import { Scene3D } from "@/components/Scene3D";
 import { useImageImports } from "@/hooks/useImageImports";
 import resumeData from "@/data/resume.json";
 
@@ -29,7 +31,11 @@ const Index = () => {
   };
 
   return (
-      <div className="min-h-screen bg-background text-foreground">
+      <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
+        <AnimatedBackground />
+
+        <Scene3D />
+
         <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
           <div className="container mx-auto px-6 py-4 flex justify-between items-center">
             <motion.div
@@ -133,7 +139,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section id="skills" className="py-20 px-6 relative cyber-grid">
           <div className="container mx-auto max-w-6xl">
             <motion.div
@@ -250,7 +255,7 @@ const Index = () => {
         <footer className="py-8 px-6 border-t border-border">
           <div className="container mx-auto text-center">
             <p className="text-muted-foreground">
-              © 2025 {resumeData.personal.name[language]}.
+              © 2024 {resumeData.personal.name[language]}.
               {language === "ru" ? " Все права защищены." : " All rights reserved."}
             </p>
           </div>

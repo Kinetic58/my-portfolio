@@ -35,6 +35,24 @@
         "category": "backend"
       },
       {
+        "name": "FastAPI",
+        "level": 85,
+        "icon": "code",
+        "category": "backend"
+      },
+      {
+        "name": "C++",
+        "level": 85,
+        "icon": "code",
+        "category": "backend"
+      },
+      {
+        "name": "Linux",
+        "level": 85,
+        "icon": "code",
+        "category": "OS"
+      },
+      {
         "name": "PostgreSQL",
         "level": 88,
         "icon": "database",
@@ -56,7 +74,7 @@
         "name": "tailwind",
         "level": 80,
         "icon": "code-2",
-        "category": "backend"
+        "category": "frontend"
       },
       {
         "name": "React",
@@ -68,13 +86,13 @@
         "name": "css & scss",
         "level": 100,
         "icon": "code-2",
-        "category": "backend"
+        "category": "frontend"
       },
       {
         "name": "HTML",
         "level": 100,
         "icon": "code-2",
-        "category": "backend"
+        "category": "frontend"
       }
     ],
     "softSkills": [
